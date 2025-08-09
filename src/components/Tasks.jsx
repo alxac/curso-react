@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { CheckIcon, ChevronRightIcon, TrashIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
@@ -35,5 +36,18 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
     </ul>
   );
 }
+
+Tasks.propTypes = {
+  tasks: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      isCompleted: PropTypes.bool,
+      description: PropTypes.string,
+    })
+  ).isRequired,
+  onTaskClick: PropTypes.func.isRequired,
+  onDeleteTaskClick: PropTypes.func.isRequired,
+};
 
 export default Tasks;

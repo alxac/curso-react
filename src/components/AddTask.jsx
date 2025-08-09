@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import Input from "./Input";
 
 function AddTask({ onAddTaskSubmit }) {
@@ -37,5 +38,9 @@ function AddTask({ onAddTaskSubmit }) {
     </div>
   );
 }
+
+AddTask.propTypes = {
+  onAddTaskSubmit: PropTypes.func.isRequired,
+};
 
 export default AddTask;
