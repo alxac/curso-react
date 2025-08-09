@@ -6,7 +6,7 @@ function AddTask({ onAddTaskSubmit }) {
   const [description, setDescription] = useState("");
 
   return (
-    <div className="space-y-4 p-6 bg-slate-200 rounded-md shadow flex flex-col">
+    <div className="add">
       <Input
         type="text"
         placeholder="Digite o título da tarefa"
@@ -30,7 +30,7 @@ function AddTask({ onAddTaskSubmit }) {
           setTitle("");
           setDescription("");
         }}
-        className="bg-slate-500 text-white px-4 py-2 rounded-md font-medium"
+        className="btn"
       >
         Adicionar
       </button>

@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const fetchTasks = async () => {
       const response = await fetch(
-        "https://jsonplaceholder.typicode.com/todos?_limit=10",
+        "https://jsonplaceholder.typicode.com/todos?_limit=5",
         {
           method: "GET",
         }
@@ -25,7 +25,7 @@ function App() {
       setTasks(data);
     };
     // SE QUISER, VOCÊ PODE CHAMAR UMA API PARA PEGAR AS TAREFAS
-    // fetchTasks();
+    fetchTasks();
   }, []);
 
   function onTaskClick(taskId) {

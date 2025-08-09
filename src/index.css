@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.add {
+  @apply space-y-4 p-6 bg-slate-200 rounded-md shadow flex flex-col;
+}
+
+button {
+  @apply bg-slate-500 text-white px-4 py-2 rounded-md font-medium;
+}
+
+input {
+  @apply border border-slate-300 outline-slate-400 px-4 py-2 rounded-md;
+}
+
+.tarefa {
+  @apply bg-slate-400 text-left w-full flex items-center gap-2 text-white p-2 rounded-md;
+}
+
+ul {
+  @apply space-y-4 p-6 bg-slate-200 rounded-md shadow;
+}
+
+li {
+  @apply flex gap-2;
+}
+
+h1 {
+  @apply text-3xl text-slate-100 font-bold text-center;
+}
