@@ -1,11 +1,8 @@
-import PropTypes from "prop-types";
+import { useTranslation } from 'react-i18next';
 
-function Title({ children }) {
-  return <h1>{children}</h1>;
+function Title() {
+  const { t } = useTranslation();
+  return <h1>{t('title')}</h1>;
 }
-
-Title.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default Title;

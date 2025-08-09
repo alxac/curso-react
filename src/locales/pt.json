@@ -1,0 +1,15 @@
+{
+  "addTask": {
+    "titlePlaceholder": "Digite o título da tarefa",
+    "descriptionPlaceholder": "Digite a descrição da tarefa",
+    "addButton": "Adicionar"
+  },
+  "alert": {
+    "fillFields": "Preencha o título e a descrição da tarefa."
+  },
+  "tasks": {
+    "details": "Detalhes",
+    "delete": "Deletar"
+  },
+  "title": "Lista de Tarefas"
+}

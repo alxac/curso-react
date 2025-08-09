@@ -2,9 +2,11 @@ import PropTypes from "prop-types";
 import { CheckIcon, ChevronRightIcon, TrashIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
+import { useTranslation } from 'react-i18next';
 
 function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   function onSeeDetailsClick(task) {
     const query = new URLSearchParams();
@@ -25,11 +27,11 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
             {task.title}
           </button>
           <Button onClick={() => onSeeDetailsClick(task)}>
-            <ChevronRightIcon />
+            <ChevronRightIcon /> {t('tasks.details')}
           </Button>
 
           <Button onClick={() => onDeleteTaskClick(task.id)}>
-            <TrashIcon />
+            <TrashIcon /> {t('tasks.delete')}
           </Button>
         </li>
       ))}

@@ -1,0 +1,15 @@
+{
+  "addTask": {
+    "titlePlaceholder": "Enter task title",
+    "descriptionPlaceholder": "Enter task description",
+    "addButton": "Add"
+  },
+  "alert": {
+    "fillFields": "Please fill in the title and description."
+  },
+  "tasks": {
+    "details": "Details",
+    "delete": "Delete"
+  },
+  "title": "Task List"
+}
